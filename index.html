@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Class 2 Assignment</title>
+</head>
+<header>
+    <nav>
+        <div class="nav-">
+            <div>LOGO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section class="sec1">
+        <div class="slide ">
+            <img src="./img/slide1.webp" alt="">
+        </div>
+        <div class="slide ">
+            <img src="./img/slide 2.jpg" alt="">
+        </div>
+        <div class="slide ">
+            <img src="./img/slide 3.jpg" alt="">
+        </div>
+        <div class="slide ">
+            <img src="./img/slide 4.jpg" alt="">
+        </div>
+
+        <svg onclick="prev()" class="left" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+
+        <svg onclick="next()"  class="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+    </section>
+
+    <section id="container">
+       <p id="clock"> </p>
+    </section>
+
+
+    <section id="timeContainer" class="stopwatch">
+        <div id="displayTime" class="display">00:00:00</div>
+        <button id="startBtn" class="start" >start</button>
+         <button id="pauseBtn" class="pause">Pause</button>
+         <button id="resetBtn" class="reset">reset</button>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
